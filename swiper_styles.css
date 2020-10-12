@@ -1,0 +1,226 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Regular.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display:swap;/*можно сделать optional как вариант*/
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Bold.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display:swap;
+}
+
+@font-face {
+    font-family: "TT Lakes";
+    src: local("TT Lakes"),
+    url("./files/font/TTLakes/TTLakes-Medium.woff2") format("woff2"),
+    url('./files/font/TTLakes/TTLakes-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display:swap;
+}
+
+.header-name {
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    font-weight: 400;
+    font-size:16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    display:block;
+    margin:0 8px;
+
+}
+
+.header {
+    display:flex;
+    justify-content: flex-start;
+    background-image: linear-gradient( to right,#F2F2F2, #FFF);
+    width: 100%;
+    border-top: 1px solid #D9FFF5;
+    padding:16px;
+
+}
+
+.body {
+    background-color: #F2F2F2;
+    margin:0;
+    padding:0;
+}
+
+.btn-more {
+    font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
+    display: block;
+    cursor: pointer;
+    background-image: url("./images/expand.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    padding-left: 24px;
+    vertical-align: bottom;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    transition-duration: 1s;
+    margin: 12px;
+}
+
+.btn-more_opened {
+    background-image: url("./images/expand2.svg");
+}
+
+@media (min-width: 120px) and (max-width: 767px) {
+    .btn-more, .btn-more_opened, .brands__btn-more  {
+        display: none;
+    }
+
+    .swiper-container {
+        max-width:100%;
+        padding: 0;
+        position: relative;
+        margin-left:16px;
+    }
+
+    .swiper-pagination {
+        position:absolute;
+        left:16px;
+    }
+
+    .swiper-pagination-bullet {
+        margin: 16px 12px;
+        min-height:12px;
+        min-width:12px;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #B5B6BC;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .brands-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands-list_minimized{
+        height: 210px;
+        overflow:hidden;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+@media (min-width: 1120px) {
+    .brands-list {
+        max-width: 1120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands-list_minimized {
+        height: 210px;
+        overflow:hidden;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+}
+
+.button {
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.brands-list__button {
+    background-image: url("./images/go.svg");
+}
+
+.brands-list__item {
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.brands-list__link {
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    display:flex;
+    justify-content: flex-end;
+    padding: 0 12px;
+    height:72px;
+    width: 224px;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    background-color: white;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.link1 {
+    background-image: url("./images/brands/sams.png");
+}
+.link2 {
+    background-image: url("./images/brands/sony.png");
+}
+.link3 {
+    background-image: url("./images/brands/appl.png");
+}
+.link4 {
+    background-image: url("./images/brands/acer.png");
+}
+.link5 {
+    background-image: url("./images/brands/lenovo.png");
+}
+.link6 {
+    background-image: url("./images/brands/hp.png");
+}
+.link7 {
+    background-image: url("./images/brands/bosc.png");
+}
+.link8 {
+    background-image: url("./images/brands/view.png");
+}
+
+.link9 {
+    background-image: url("./images/brands/sams.png");
+}
+.link10 {
+    background-image: url("./images/brands/sony.png");
+}
+.link11 {
+    background-image: url("./images/brands/appl.png");
+}
