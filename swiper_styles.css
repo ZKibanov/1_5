@@ -120,6 +120,12 @@ img {
     .swiper-pagination-bullet-active {
         background-color: #B5B6BC;
     }
+    
+    .brands-list__item {
+        min-width: 224px;
+        display: block;
+        box-sizing: border-box;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
