@@ -20,8 +20,7 @@ img {
 @font-face {
     font-family: "TT Lakes";
     src: local("TT Lakes"),
-    url("./files/font/TTLakes/TTLakes-Regular.woff2") format("woff2"),
-    url('./files/font/TTLakes/TTLakes-Regular.woff') format('woff');
+    url("./files/font/TTLakes/TTLakes-Regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display:swap;/*можно сделать optional как вариант*/
@@ -30,8 +29,7 @@ img {
 @font-face {
     font-family: "TT Lakes";
     src: local("TT Lakes"),
-    url("./files/font/TTLakes/TTLakes-Bold.woff2") format("woff2"),
-    url('./files/font/TTLakes/TTLakes-Bold.woff') format('woff');
+    url("./files/font/TTLakes/TTLakes-Bold.woff2") format("woff2");
     font-weight: 700;
     font-style: normal;
     font-display:swap;
@@ -40,8 +38,7 @@ img {
 @font-face {
     font-family: "TT Lakes";
     src: local("TT Lakes"),
-    url("./files/font/TTLakes/TTLakes-Medium.woff2") format("woff2"),
-    url('./files/font/TTLakes/TTLakes-Medium.woff') format('woff');
+    url("./files/font/TTLakes/TTLakes-Medium.woff2") format("woff2");
     font-weight: 500;
     font-style: normal;
     font-display:swap;
@@ -243,8 +240,10 @@ img {
 
 .btn-more:focus {
     outline:none;
+    filter: drop-shadow(6px 3px 4px #7E7E82);
 }
 
 .btn:focus {
-    outline-color: #D9FFF5;
+    outline:none;
+    filter: drop-shadow(6px 3px 3px #7E7E82);
 }
