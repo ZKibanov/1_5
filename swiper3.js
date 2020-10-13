@@ -17,10 +17,11 @@ btnMore.addEventListener('click', function () {
 const enableSwiper = function() {
     mySwiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
-        spaceBetween: 10,
+        spaceBetween: 16,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+            clickable: true,
         },
     });
 }

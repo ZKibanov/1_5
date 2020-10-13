@@ -47,7 +47,7 @@ img {
     font-display:swap;
 }
 
-.header-name {
+.brands-list__header-name {
     font-family: "TT Lakes", "Arial", "Roboto Light",sans-serif ;
     font-weight: 400;
     font-size:16px;
@@ -58,9 +58,10 @@ img {
 
 }
 
-.header {
+.brands-list__header {
     display:flex;
     justify-content: flex-start;
+    color:#7E7E82;
     background-image: linear-gradient( to right,#F2F2F2, #FFF);
     width: 100%;
     border-top: 1px solid #D9FFF5;
@@ -101,7 +102,7 @@ img {
     }
 
     .swiper-container {
-        max-width:100%;
+        width:460px;
         padding: 0;
         position: relative;
         margin-left:16px;
@@ -125,7 +126,9 @@ img {
         min-width: 224px;
         display: block;
         box-sizing: border-box;
+        margin: 0;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -175,6 +178,11 @@ img {
     background-image: url("./images/go.svg");
 }
 
+.brands-list__button:hover {
+    filter: drop-shadow(6px 3px 4px #7E7E82);
+    transition-duration: 0.5s;
+}
+
 .brands-list__item {
     box-sizing: border-box;
     width: 250px;
@@ -195,6 +203,8 @@ img {
     margin-left: 32px;
     margin-top: 32px;
 }
+
+
 
 .link1 {
     background-image: url("./images/brands/sams.png");
@@ -229,4 +239,12 @@ img {
 }
 .link11 {
     background-image: url("./images/brands/appl.png");
+}
+
+.btn-more:focus {
+    outline:none;
+}
+
+.btn:focus {
+    outline-color: #D9FFF5;
 }
